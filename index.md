@@ -11,7 +11,7 @@ Steps:
 1. update pom.xml of all modules - bottom to top
 2. git commit + push - as always when changing something
 3. sign artefacts
-  ** is it a one time requirement or do I have to sign before every update?
+  * is it a one time requirement or do I have to sign before every update?
 
 remark: Since I need the gpg key I'll do it remotly from my former machine
 
