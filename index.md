@@ -12,8 +12,22 @@ Steps:
 2. git commit + push - as always when changing something
 3. sign artefacts
   * is it a one time requirement or do I have to sign before every update?
+5. check JAVA path --- for some reason linux kepts forgetting about it
+  * echo $JAVA_HOME
+  * source /etc/profile --- if java is already set otherwise see: https://stackoverflow.com/questions/24641536/how-to-set-java-home-in-linux-for-all-users
+6. check if the gpg signing works:
+  * echo "test" | gpg --clearsign
+  * if fails -> export GPG_TTY=$(tty)
 
-remark: Since I need the gpg key I'll do it remotly from my former machine
+* docker login??
+* export GPG_TTY=$(tty)
+* mvn clean build
+* mvn clean install
+* mvn clean deploy -P docker
+* mvn clean deploy -Ddocker.user=USERNAME -Ddocker.password='PASSWORD'
+###
+
+* remark: Since I need the gpg key I'll do it remotly from my former machine
 
 
 
