@@ -18,18 +18,11 @@ Steps:
 6. check if the gpg signing works:
   * echo "test" | gpg --clearsign
   * if fails -> export GPG_TTY=$(tty)
-
-* docker login??
-* export GPG_TTY=$(tty)
-* mvn clean build
-* mvn clean install
-* mvn clean deploy -P docker
-* mvn clean deploy -Ddocker.user=USERNAME -Ddocker.password='PASSWORD'
+7. mvn clean install --- test if every test works
+8. mvn clean deploy -Ddocker.user=USERNAME -Ddocker.password='PASSWORD'  --- deploys to maven central
+9. check nexus repistory manager
+10. wait for visability on maven central 
+11. ask system admin to update server
 ###
 
 * remark: Since I need the gpg key I'll do it remotly from my former machine
-
-
-
-* do "mvn clean deploy" deploys artifact to maven central
-* check nexus repository manager to see the effect
