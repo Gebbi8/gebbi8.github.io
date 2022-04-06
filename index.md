@@ -8,7 +8,7 @@ Starting Point:
 * some time ago I added another module and managed to publish everything on maven central (with support). Sadly, forgot how to do it.
 
 Steps:
-1. update pom.xml of all modules - bottom to top
+1. update pom.xml of all modules from bottom to top
 2. git commit + push --- as always when changing something
 3. sign artefacts
   * is it a one time requirement or do I have to sign before every update?
