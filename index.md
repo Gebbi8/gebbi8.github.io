@@ -9,7 +9,7 @@ Starting Point:
 
 Steps:
 1. update pom.xml of all modules - bottom to top
-2. git commit + push - as always when changing something
+2. git commit + push --- as always when changing something
 3. sign artefacts
   * is it a one time requirement or do I have to sign before every update?
 5. check JAVA path --- for some reason linux kepts forgetting about it
