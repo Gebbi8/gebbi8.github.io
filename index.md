@@ -13,13 +13,13 @@ Steps:
 3. sign artefacts
   * is it a one time requirement or do I have to sign before every update?
 5. check JAVA path --- for some reason linux kepts forgetting about it
-  * echo $JAVA_HOME
-  * source /etc/profile --- if java is already set otherwise see: https://stackoverflow.com/questions/24641536/how-to-set-java-home-in-linux-for-all-users
+  * `echo $JAVA_HOME`
+  * `source /etc/profile` --- if java is already set otherwise see: https://stackoverflow.com/questions/24641536/how-to-set-java-home-in-linux-for-all-users
 6. check if the gpg signing works:
-  * echo "test" | gpg --clearsign
-  * if fails -> export GPG_TTY=$(tty)
-7. mvn clean install --- test if every test works
-8. mvn clean deploy -Ddocker.user=USERNAME -Ddocker.password='PASSWORD'  --- deploys to maven central
+  * `echo "test" | gpg --clearsign`
+  * if fails -> `export GPG_TTY=$(tty)`
+7. 'mvn clean install` --- test if every test works
+8. `mvn clean deploy -Ddocker.user=USERNAME -Ddocker.password='PASSWORD'`  --- deploys to maven central
 9. check nexus repistory manager
 10. wait for visability on maven central 
 11. ask system admin to update server
