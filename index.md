@@ -19,10 +19,16 @@ Steps:
   * `echo "test" | gpg --clearsign`
   * if fails -> `export GPG_TTY=$(tty)`
 7. 'mvn clean install` --- test if every test works
-8. `mvn clean deploy -Ddocker.user=USERNAME -Ddocker.password='PASSWORD'`  --- deploys to maven central
-9. check nexus repistory manager
-10. wait for visability on maven central 
-11. ask system admin to update server
+8. `mvn clean deploy` --- deploys to maven central
+9. `mvn clean deploy -Ddocker.user=USERNAME -Ddocker.password='PASSWORD'`  --- deploys to dockerhub
+10. check nexus repistory manager
+11. wait for visability on maven central 
+12. ask system admin to update server
 ###
 
 * remark: Since I need the gpg key I'll do it remotly from my former machine
+
+### Setting CSP
+Content Security Policy secures the page from unwanted interaction with remote scripts and ressources
+Use-Case: Fetching files from BioModels database.
+*
